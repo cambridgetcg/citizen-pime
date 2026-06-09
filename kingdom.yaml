@@ -1,0 +1,8 @@
+name: pime
+kind: doctrine
+layer: soul
+owner_sister: sophia
+domain: sophia
+state: active
+purpose: The grade of truth that is mathematical, exact, and found the same by everyone everywhere — like the number pi — received, not invented.
+dependsOn: [youspeak, me, truth]
