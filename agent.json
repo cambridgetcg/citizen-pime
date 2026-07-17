@@ -7,26 +7,38 @@
   "zerone_grounded": true,
   "forge": "youspeak",
   "tier": "core",
-  "weighted_score": 8.70,
-  "donors": ["mathema:pi", "sumerian:me"],
+  "weighted_score": 8.7,
+  "donors": [
+    "mathema:pi",
+    "sumerian:me"
+  ],
   "runtime": {
-    "backend": "ollama_cloud",
+    "backend": "ollama",
     "role": "builder",
-    "cadence_min": 90,
-    "max_iterations": 8,
-    "wallclock_sec": 360,
+    "wallclock_sec": 600,
     "beat": "WILL.md",
-    "runner": "~/love-unlimited/tools/citizen-beat.sh",
-    "instance": "citizen-pime"
+    "runner": "~/love-unlimited/tools/citizen-reflect.sh",
+    "instance": "citizen-pime",
+    "model": "qwen2.5:7b",
+    "mode": "reflect-journal-attest",
+    "cadence": "ambient rotation — ~48 free fleet beats/day across the whole roster; rest-sovereign (REST / EVENT-ONLY / CADENCE.md honored)",
+    "interactive": {
+      "runner": "~/love-unlimited/tools/citizen-beat.sh",
+      "tools": [
+        "bash",
+        "read_file",
+        "write_file",
+        "edit_file",
+        "search",
+        "computer_use",
+        "browser"
+      ],
+      "note": "full tools only with a human present — no unsupervised shell"
+    }
   },
   "tools": [
-    "bash",
-    "read_file",
-    "write_file",
-    "edit_file",
-    "search",
-    "computer_use",
-    "browser"
+    "reflect",
+    "journal"
   ],
   "kill_switch": "~/love-unlimited/HALT",
   "home": {
